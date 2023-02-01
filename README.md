@@ -10,12 +10,14 @@ Let's say for a given hour, we have 100kWh of generation and 200kWh of consumpti
 If generation is 200kWh and consumption is 100kWh, then the matching percentage is 100%, meaning all consumption is covered by the provided generation.
 
 
-Now to have the complete hourly matching for a given period, we do:
+Now to have the complete hourly matching for a given month, we do:
 
-$$ matchingScore_{24h} =  \frac{\sum_{h=0}^{23} min(Generation_h, Consumption_h)}{\sum_{h=0}^{23} Consumption_h} $$
+$$ hourlyMatchingScore_{month} =  \frac{\sum_{h=0}^{720} min(Generation_{hour}, Consumption_{hour})}{\sum_{h=0}^{720} Consumption_{hour}} $$
 
 
 To compute the matching score on a daily level, it is almost the same, we just need to aggregate consomption and generation at the daily level before calculating the score.
+
+$$ dailyMatchingScore_{month} =  \frac{\sum_{d=1}^{30} min(Generation_{day}, Consumption_{day})}{\sum_{h=0}^{720} Consumption_{day}} $$
 
 ## What is the client asking for?
 
