@@ -32,7 +32,7 @@ Spend your time as you please, you don't need to come up with a fully built solu
 
 Ideally, you would have written the tests to assert the solution's behaviour. We would then work together on how to implement it.
 
-We would give extra attention to:
+We will pay extra attention to:
 - the tests readability
 - how you separate business logic from pure technical aspects
 - your communication skills
