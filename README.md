@@ -12,9 +12,9 @@ If generation is 200kWh and consumption is 100kWh, then the matching percentage 
 Since one image is worth 1000 words, we can represent it like this:
 ![MicrosoftTeams-image](https://user-images.githubusercontent.com/100279243/216078534-8ca3eca4-1a9f-44ba-abf1-1eb75fe6b92e.png)
 
-The dark blue area being the matched quantity. 
+The dark blue area being the matched quantity, the matching score would be the matched quantity divided by the total consumption over the period.
 
-Now to have the complete hourly matching for a given month, we do:
+Now to have the complete hourly matching for a given month, we'd do:
 
 $$ hourlyMatchingScore_{month} =  \frac{\sum_{hour=0}^{720} min(Generation_{hour}, Consumption_{hour})}{\sum_{hour=0}^{720} Consumption_{hour}} $$
 
