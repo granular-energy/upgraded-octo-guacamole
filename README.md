@@ -39,7 +39,7 @@ We will pay extra attention to:
 - how you separate business logic from pure technical aspects
 - your communication skills
 
-We will be obvisouly time-limited to solve this, so try to focus on code quality rather than technical shenanigans.
+We will be obviously time-limited to solve this, so try to focus on code quality rather than technical shenanigans.
 
 
 
